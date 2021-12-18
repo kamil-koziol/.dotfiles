@@ -1,0 +1,2 @@
+#!/bin/sh
+ffmpeg -framerate $1 -i "frame%05d.tif" -pix_fmt yuv420p -vcodec h264 -refs 16 -preset ultrafast $2

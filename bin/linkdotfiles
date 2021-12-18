@@ -1,0 +1,7 @@
+#!/bin/sh
+
+DOTFILES_DIR=$HOME/GitHub/.dotfiles
+
+ln -s $DOTFILES_DIR/.zshrc
+ln -s $DOTFILES_DIR/bin
+ln -s $DOTFILES_DIR/.vimrc
