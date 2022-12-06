@@ -1,4 +1,4 @@
-PATH=${PATH}:$HOME/bin
+PATH=${PATH}:$HOME/.bin
 export PATH
 
 autoload -Uz vcs_info
