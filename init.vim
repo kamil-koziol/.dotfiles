@@ -21,6 +21,7 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
