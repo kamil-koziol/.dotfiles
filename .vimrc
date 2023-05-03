@@ -10,3 +10,8 @@ set wildmenu
 set showcmd
 set autoindent
 set ruler
+set expandtab
+set ignorecase
+set smartcase
+set incsearch
+
