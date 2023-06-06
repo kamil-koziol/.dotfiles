@@ -3,6 +3,9 @@ export PATH
 PATH=${PATH}:$HOME/bin
 export PATH
 
+autoload -Uz compinit
+compinit
+
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
 precmd() { vcs_info }
@@ -27,9 +30,6 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 source /Users/kamilkoziol/.docker/init-zsh.sh || true # Added by Docker Desktop
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -76,4 +76,11 @@ precmd_build_prompt() {
 # Run the previously defined function before each prompt
 precmd_functions+=( precmd_build_prompt )
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+function _tmux_completions() {
+  local -a sessions
+  sessions=($(tmux-ls))
+  compadd -a sessions
+}
+compdef _tmux_completions tmux-open
