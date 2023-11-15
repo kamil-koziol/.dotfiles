@@ -1,4 +1,0 @@
-#!/bin/sh
-filename=$(echo "$1" | cut -f 1 -d '.')
-g++ -I $pwd/**/*.h -O2 -Wall -std=c++17 $1 -o $filename.out
-./$filename.out
