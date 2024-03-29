@@ -20,6 +20,7 @@ FORMULAES=(
 )
 
 CASKS=(
+    "discord"
     "alacritty" # terminal
     "obsidian" # notes
 )
