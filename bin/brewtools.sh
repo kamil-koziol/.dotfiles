@@ -14,7 +14,6 @@ FORMULAES=(
     "zoxide" # better cd
     "btop" # resource monitor
     "jq" # json pipe
-    "nvm" # Managing Node versions
 )
 
 CASKS=(
