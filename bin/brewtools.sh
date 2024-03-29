@@ -14,6 +14,8 @@ FORMULAES=(
     "zoxide" # better cd
     "btop" # resource monitor
     "jq" # json pipe
+    "pnpm" # Better npm
+    "gh" # Github CLI
 )
 
 CASKS=(
