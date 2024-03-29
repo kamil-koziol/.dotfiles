@@ -16,10 +16,12 @@ FORMULAES=(
     "jq" # json pipe
     "pnpm" # Better npm
     "gh" # Github CLI
+    "rustup"
 )
 
 CASKS=(
     "alacritty" # terminal
+    "obsidian" # notes
 )
 
 brew update
