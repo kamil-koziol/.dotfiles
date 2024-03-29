@@ -4,6 +4,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Cache doesnt clutter $HOME
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -15,10 +18,6 @@ plugins=(
   docker
   brew
   sudo # use esc-esc to re-enter previous command with sudo
-  web-search
-
-  # external
-  zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions/
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -27,3 +26,19 @@ source $ZSH/oh-my-zsh.sh
 
 ## Prompt
 eval "$(starship init zsh)" # https://github.com/axieax/zsh-starship
+
+## Fuzzy finder
+eval "$(fzf --zsh)"
+
+## Zoxide
+eval "$(zoxide init zsh)"
+
+# Aliases
+
+alias ls="eza"
+alias ll="eza -alh"
+alias tree="eza --tree"
+
+alias cat="bat"
+
+alias cd="z"
