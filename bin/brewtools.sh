@@ -17,6 +17,10 @@ FORMULAES=(
     "pnpm" # Better npm
     "gh" # Github CLI
     "rustup"
+    "docker"
+    "docker-compose"
+    "colima" # docker machine
+    "mkcert" # make localhost as trusted CA
 )
 
 CASKS=(
