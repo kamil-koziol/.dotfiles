@@ -27,6 +27,7 @@ CASKS=(
     "discord"
     "alacritty" # terminal
     "obsidian" # notes
+    "figma"
 )
 
 brew update
