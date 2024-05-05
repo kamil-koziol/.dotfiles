@@ -21,13 +21,18 @@ FORMULAES=(
     "docker-compose"
     "colima" # docker machine
     "mkcert" # make localhost as trusted CA
+    "postgresql@16" # postgres
 )
 
 CASKS=(
     "discord"
     "alacritty" # terminal
     "obsidian" # notes
-    "figma"
+    "figma" # design
+    "zed" # editor
+    "thunderbird" # mail
+    "brave-browser" # browser
+    "bitwarden" # password manager
 )
 
 brew update
