@@ -22,6 +22,8 @@ FORMULAES=(
     "colima" # docker machine
     "mkcert" # make localhost as trusted CA
     "postgresql@16" # postgres
+    "llvm" # debugging rust
+    "pandoc" # for generating pdfs from markdown
 )
 
 CASKS=(
