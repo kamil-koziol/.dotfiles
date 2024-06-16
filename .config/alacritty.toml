@@ -11,13 +11,13 @@ decorations = "Full"
 
 [font]
 
-normal.family = "JetBrains Mono"
-normal.style = "Medium"
-bold.family = "JetBrains Mono"
+normal.family = "JetBrainsMono NF"
+normal.style = "Regular"
+bold.family = "JetBrainsMono NF"
 bold.style = "Bold"
-italic.family = "JetBrains Mono"
+italic.family = "JetBrainsMono NF"
 italic.style = "Italic"
-bold_italic.family = "JetBrains Mono"
+bold_italic.family = "JetBrainsMono NF"
 bold_italic.style = "BoldItalic"
 
 size = 16.0

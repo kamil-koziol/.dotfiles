@@ -29,7 +29,7 @@ FORMULAES=(
 CASKS=(
     "discord"
     "alacritty" # terminal
-    "font-jetbrains-mono" # terminal font
+    "font-jetbrains-mono-nerd-font"
     "obsidian" # notes
     "figma" # design
     "zed" # editor
