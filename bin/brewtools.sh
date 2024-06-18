@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FORMULAES=(
+    # tools
     "ffmpeg" # converting images and videos
     "yt-dlp" # downloading youtube videos
     "starship" # prompt
@@ -24,6 +25,7 @@ FORMULAES=(
     "postgresql@16" # postgres
     "llvm" # debugging rust
     "pandoc" # for generating pdfs from markdown
+    "ctags" # ctags for neovim
 )
 
 CASKS=(
