@@ -26,6 +26,7 @@ FORMULAES=(
     "llvm" # debugging rust
     "pandoc" # for generating pdfs from markdown
     "ctags" # ctags for neovim
+    "pyenv"
 )
 
 CASKS=(
