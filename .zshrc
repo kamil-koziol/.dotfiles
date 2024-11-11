@@ -41,6 +41,8 @@ alias tree="eza --tree"
 
 alias cat="bat"
 
+alias switch="darwin-rebuild switch --flake ~/.dotfiles";
+
 alias cd="z"
 
 ## NVM
