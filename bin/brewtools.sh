@@ -24,6 +24,7 @@ FORMULAES=(
     "nvm"
     "yazi" # file manager
     "tmux"
+    "git-delta" # git pager
 )
 
 CASKS=(

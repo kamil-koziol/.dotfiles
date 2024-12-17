@@ -16,8 +16,6 @@ eval "$(fzf --zsh)"
 ## Zoxide
 eval "$(zoxide init zsh)"
 
-
-
 ## NVM
 
 export NVM_DIR="$HOME/.nvm"
