@@ -30,3 +30,7 @@ eval "$(pyenv init -)"
 
 # rustup
 export PATH="/usr/local/opt/rustup/bin:$PATH"
+
+# fix tmux colors
+alias tmux="TERM=xterm-256color tmux"
+unset TMUX # https://github.com/helix-editor/helix/issues/8715
