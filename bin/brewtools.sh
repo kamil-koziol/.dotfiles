@@ -1,14 +1,13 @@
 #!/bin/bash
 
 FORMULAES=(
-    # tools
+    "stow" # dotfiles linker
     "ffmpeg" # converting images and videos
     "yt-dlp" # downloading youtube videos
     "starship" # prompt
-    "jesseduffield/lazygit/lazygit" # git
+    "lazygit" # git
     "ripgrep" # search for strings in files
-    "neovim" # editor
-    "stow" # dotfiles linker
+    "helix" # editor
     "eza" # modern replacement for ls
     "bat" # better cat
     "fzf" # fuzzy finder
@@ -16,29 +15,22 @@ FORMULAES=(
     "btop" # resource monitor
     "jq" # json pipe
     "pnpm" # Better npm
-    "gh" # Github CLI
     "rustup"
     "docker"
     "docker-compose"
     "colima" # docker machine
-    "mkcert" # make localhost as trusted CA
-    "postgresql@16" # postgres
     "llvm" # debugging rust
-    "pandoc" # for generating pdfs from markdown
-    "ctags" # ctags for neovim
     "pyenv"
+    "nvm"
+    "yazi" # file manager
+    "tmux"
 )
 
 CASKS=(
     "discord"
     "alacritty" # terminal
     "font-jetbrains-mono-nerd-font"
-    "obsidian" # notes
-    "figma" # design
-    "zed" # editor
-    "thunderbird" # mail
     "brave-browser" # browser
-    "bitwarden" # password manager
 )
 
 brew update

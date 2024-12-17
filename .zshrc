@@ -1,40 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Cache doesnt clutter $HOME
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
-# Plugins https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
-
-plugins=(
-  # internal
-  git 
-  docker
-  brew
-  sudo # use esc-esc to re-enter previous command with sudo
-)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-## Prompt
-eval "$(starship init zsh)" # https://github.com/axieax/zsh-starship
-
-## Fuzzy finder
-eval "$(fzf --zsh)"
-
-## Zoxide
-eval "$(zoxide init zsh)"
-
 # Aliases
-
 alias ls="eza"
 alias ll="eza -alh"
 alias tree="eza --tree"
@@ -43,17 +7,28 @@ alias cat="bat"
 
 alias cd="z"
 
+## Starship
+eval "$(starship init zsh)" # https://github.com/axieax/zsh-starship
+
+## Fuzzy finder
+eval "$(fzf --zsh)"
+
+## Zoxide
+eval "$(zoxide init zsh)"
+
+
+
 ## NVM
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-## Postgres
 
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+## pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# rustup
+export PATH="/usr/local/opt/rustup/bin:$PATH"
