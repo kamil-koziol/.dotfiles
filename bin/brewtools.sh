@@ -23,7 +23,7 @@ FORMULAES=(
     "colima" # docker machine
     "pyenv" # python version manager
     "nvm" # node version manager
-    "gvm" # go version manager
+    "goenv" # go version manager
     "yazi" # file manager
     "tmux" # session manager
     "tldr" # short command examples
@@ -38,12 +38,5 @@ CASKS=(
 
 brew update
 
-for formula in ${FORMULAES[@]}
-do
-    brew install $formula
-done
-
-for cask in ${CASKS[@]}
-do
-    brew install $cask --cask
-done
+brew install ${FORMULAES[@]}
+brew install --cask ${CASKS[@]}
