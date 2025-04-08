@@ -25,6 +25,7 @@ FORMULAES=(
     "nvm"
     "yazi" # file manager
     "tmux" # session manager
+    "tldr" # short command examples
 )
 
 CASKS=(
