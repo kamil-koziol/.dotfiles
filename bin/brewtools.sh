@@ -21,8 +21,9 @@ FORMULAES=(
     "docker"
     "docker-compose"
     "colima" # docker machine
-    "pyenv"
-    "nvm"
+    "pyenv" # python version manager
+    "nvm" # node version manager
+    "gvm" # go version manager
     "yazi" # file manager
     "tmux" # session manager
     "tldr" # short command examples
