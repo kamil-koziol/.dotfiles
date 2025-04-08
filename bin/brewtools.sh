@@ -8,7 +8,6 @@ FORMULAES=(
     "lazygit" # git
     "git-delta" # git pager
     "ripgrep" # search for strings in files
-    "helix" # editor
     "eza" # modern replacement for ls
     "bat" # better cat
     "fzf" # fuzzy finder
