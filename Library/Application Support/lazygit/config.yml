@@ -4,9 +4,8 @@ git:
     colorArg: always
     pager: delta --dark --color-only --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   commitPrefix:
-    pattern: "^(\\d+)-.*$"
-    replace: "[#$1] "
+    - pattern: "^(\\d+)-.*$"
+      replace: "[#$1] "
 gui:
   border: single
   nerdFontsVersion: "3"
-
