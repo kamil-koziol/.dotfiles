@@ -29,7 +29,7 @@ FORMULAES=(
 
 CASKS=(
     "discord"
-    "alacritty" # terminal
+    "ghostty" # terminal
     "font-jetbrains-mono-nerd-font"
     "brave-browser" # browser
 )
