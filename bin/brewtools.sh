@@ -6,6 +6,7 @@ FORMULAES=(
     "yt-dlp" # downloading youtube videos
     "starship" # prompt
     "lazygit" # git
+    "git-delta" # git pager
     "ripgrep" # search for strings in files
     "helix" # editor
     "eza" # modern replacement for ls
@@ -15,23 +16,22 @@ FORMULAES=(
     "btop" # resource monitor
     "jq" # json pipe
     "pnpm" # Better npm
-    "rustup"
+    "rustup" # rust
+    "llvm" # debugging rust
     "docker"
     "docker-compose"
     "colima" # docker machine
-    "llvm" # debugging rust
     "pyenv"
     "nvm"
     "yazi" # file manager
-    "tmux"
-    "git-delta" # git pager
+    "tmux" # session manager
 )
 
 CASKS=(
     "discord"
     "ghostty" # terminal
     "font-jetbrains-mono-nerd-font"
-    "brave-browser" # browser
+    "zen-browser" # browser
 )
 
 brew update
