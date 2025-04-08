@@ -26,6 +26,7 @@ FORMULAES=(
     "yazi" # file manager
     "tmux" # session manager
     "tldr" # short command examples
+    "k9s" # cli kubernetes managment
 )
 
 CASKS=(
