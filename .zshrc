@@ -7,6 +7,9 @@ alias cat="bat"
 
 alias cd="z"
 
+alias nvim='nvim --listen /tmp/nvim-server-$(tmux display-message -p "\#{session_id}-#{window_id}-#{pane_id}").pipe'
+export EDITOR=nvim
+
 ## Starship
 eval "$(starship init zsh)" # https://github.com/axieax/zsh-starship
 
@@ -33,4 +36,3 @@ export PATH="/usr/local/opt/rustup/bin:$PATH"
 
 # fix tmux colors
 alias tmux="TERM=xterm-256color tmux"
-unset TMUX # https://github.com/helix-editor/helix/issues/8715

@@ -9,3 +9,8 @@ git:
 gui:
   border: single
   nerdFontsVersion: "3"
+
+os:
+  edit: nvim --server /tmp/nvim-server-$(tmux display-message -p '\#{session_id}-#{window_id}-#{pane_id}').pipe --remote-send "<cmd>e {{filename}}<cr>";tmux popup -C;
+  editAtLine: nvim --server /tmp/nvim-server-$(tmux display-message -p '\#{session_id}-#{window_id}-#{pane_id}').pipe --remote-send "<cmd>e +{{line}} {{filename}}<cr>";tmux popup -C;
+  open: nvim --server /tmp/nvim-server-$(tmux display-message -p '\#{session_id}-#{window_id}-#{pane_id}').pipe --remote-send "<cmd>e {{filename}}<cr>";tmux popup -C;
