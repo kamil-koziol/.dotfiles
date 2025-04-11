@@ -20,7 +20,7 @@ FORMULAES=(
     "docker"
     "docker-compose"
     "colima" # docker machine
-    "pyenv" # python version manager
+    "uv" # python version manager
     "nvm" # node version manager
     "goenv" # go version manager
     "yazi" # file manager
