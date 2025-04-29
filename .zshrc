@@ -1,3 +1,8 @@
+# Start i3
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    exec startx &>/dev/null
+fi
+
 # Aliases
 alias ls="eza"
 alias ll="eza -alh"
