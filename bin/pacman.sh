@@ -7,12 +7,20 @@ packages=(
     # Window Manager
     "xorg-xinit i3-wm"
     "rofi" # program select
+    "polybar" # top bar
+    "xcolor" # color picker
+    "maim" # screenshots
+    "xclip" # copy to clipboard
+    "slock" # lockscreen
 
     # Browser
     "zen-browser-bin"
 
     # Terminal
     "ghostty"
+
+    # Audio
+    "spotify"
 
     # Shell
     "zsh"
@@ -38,9 +46,6 @@ packages=(
     "tldr" # short command examples
     "feh" # show images in terminal
 
-    # Version managers
-    "nvm" # node version manager
-
     # Go
     "go"
     "goenv" # go version manager
@@ -57,6 +62,7 @@ packages=(
     "ruff" # linter and formatter
 
     # Typescript && Javascript
+    "nvm" # node version manager
     "typescript-language-server"
 )
 
