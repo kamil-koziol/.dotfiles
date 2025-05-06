@@ -6,6 +6,7 @@ yay -Syu --noconfirm
 packages=(
     # Window Manager
     "xorg-xinit"
+    "xorg-xrandr"
     "i3-wm"
     "rofi" # program select
     "polybar" # top bar
@@ -30,6 +31,9 @@ packages=(
     # Containers
     "docker"
     "docker-compose"
+
+    # Editor
+    "neovim"
 
     # CLI Tools
     "stow" # dotfiles linker
