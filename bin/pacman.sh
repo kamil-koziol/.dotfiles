@@ -5,7 +5,8 @@ yay -Syu --noconfirm
 
 packages=(
     # Window Manager
-    "xorg-xinit i3-wm"
+    "xorg-xinit"
+    "i3-wm"
     "rofi" # program select
     "polybar" # top bar
     "xcolor" # color picker
@@ -20,11 +21,15 @@ packages=(
     "ghostty"
 
     # Audio
-    "spotify"
+    "ncspot" # Spotify TUI
 
     # Shell
     "zsh"
     "zsh-autocompletions"
+
+    # Containers
+    "docker"
+    "docker-compose"
 
     # CLI Tools
     "stow" # dotfiles linker
@@ -40,12 +45,11 @@ packages=(
     "btop" # resource monitor
     "jq" # json pipe
     "pnpm" # Better npm
-    "docker docker-compose" # Containers
     "yazi" # file manager
     "tmux" # session manager
     "tldr" # short command examples
     "feh" # show images in terminal
-
+    "direnv" # .env loader
     # Go
     "go"
     "goenv" # go version manager
