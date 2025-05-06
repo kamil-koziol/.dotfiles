@@ -15,6 +15,9 @@ packages=(
     "xclip" # copy to clipboard
     "slock" # lockscreen
 
+    # Font
+    "ttf-jetbrains-mono"
+    
     # Browser
     "zen-browser-bin"
 
