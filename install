@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat .local/share/packages | sed '/^#/d;/^$/d;s/\s*#.*//g' | tr '\n' ' ' | xargs sudo pacman -S --needed

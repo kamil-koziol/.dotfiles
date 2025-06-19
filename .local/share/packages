@@ -1,0 +1,83 @@
+# System
+brightnessctl
+cronie
+fastfetch
+iwd
+man-db
+sudo
+picom # compositor
+openssh
+
+## Xorg
+xorg-server
+xorg-xinit
+xorg-xrandr
+xclip
+xcolor
+xdotool
+xorg-xset
+
+## Music stuff
+pamixer
+pipewire
+pipewire-audio
+pipewire-pulse
+playerctl
+wireplumber
+mpc
+mpd
+id3v2
+
+## Notifications
+dunst
+
+# Editor
+vim
+neovim
+noto-fonts-emoji
+ttf-jetbrains-mono-nerd
+
+# LSPs
+gopls
+
+# Browser
+firefox
+
+# Terminal stuff
+stow
+zsh
+zsh-syntax-highlighting
+fzf
+git
+git-delta
+lazygit
+hugo
+lsof
+cowsay
+fortune-mod
+
+# Terminal multiplexer
+tmux
+
+# Password manager
+pass
+
+# File manager
+lf
+
+# Video player
+mpv
+yt-dlp
+
+# Music player
+ncmpcpp
+
+# RSS Reader
+newsboat
+
+# Libs
+imlib2
+libnotify
+libx11
+libxft
+libxinerama
