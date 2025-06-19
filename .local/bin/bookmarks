@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat $XDG_DATA_HOME/bookmarks | dmenu -l 16 | cut -d"," -f2 | xclip -selection clipboard
