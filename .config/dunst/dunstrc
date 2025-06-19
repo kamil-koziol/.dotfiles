@@ -1,0 +1,25 @@
+# See dunst(5) for all configuration options
+
+[global]
+    frame_color = "#7c0b2b"
+    background = "#222222"
+    foreground = "#ffffff"
+
+    font = JetBrainsMono Nerd Font 12
+    padding = 20
+
+    # dmenu path.
+    dmenu = /usr/local/bin/dmenu -p dunst:
+
+[urgency_low]
+    foreground = "#888888"
+    timeout = 5
+
+[urgency_normal]
+    foreground = "#ffffff"
+    timeout = 5
+
+[urgency_critical]
+    frame_color = "#ff0000"
+    timeout = 0
+    override_pause_level = 60

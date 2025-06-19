@@ -1,0 +1,4 @@
+#!/bin/sh
+# Simple script to pick color from screen and copy it to clipboard
+
+xcolor | tr -d '\n' | xclip -selection clipboard && notify-send "copied color to clipboard"
