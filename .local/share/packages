@@ -61,6 +61,8 @@ tmux
 
 # Password manager
 pass
+pass-otp
+zbar
 
 # File manager
 lf
