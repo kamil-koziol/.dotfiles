@@ -73,6 +73,8 @@ bindkey '^o' run_lfcd_widget
 
 #alias nvim='nvim --listen /tmp/nvim-server-$(tmux display-message -p "\#{session_id}-#{window_id}-#{pane_id}").pipe'
 
+alias tms="$HOME/.local/bin/tmux-sessionizer"
+
 # Fuzzy finder
 eval "$(fzf --zsh)"
 
