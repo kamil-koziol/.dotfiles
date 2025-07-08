@@ -55,6 +55,7 @@ hugo
 lsof
 cowsay
 fortune-mod
+jq
 
 # Terminal multiplexer
 tmux
