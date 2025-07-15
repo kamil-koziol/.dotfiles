@@ -6,7 +6,7 @@ export PATH="$HOME/go/bin:$PATH"
 
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 export FILE="lf"
 
 # Cleanup
