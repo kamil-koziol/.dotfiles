@@ -31,3 +31,8 @@ highlight article ":.*\\(image\\)$" blue default
 highlight article ":.*\\(embedded flash\\)$" magenta default
 
 macro v set browser "setsid -f mpv" ; open-in-browser;
+
+color listfocus white color88
+color listfocus_unread white color88
+color title white color88
+color info white color88
