@@ -1,86 +1,91 @@
+# File in format
+# package manager,package
+# package manager == a => AUR
+# package manager == p => PACMAN
+
 # System
-brightnessctl
-cronie
-fastfetch
-iwd
-man-db
-sudo
-picom # compositor
-openssh
+p,brightnessctl
+p,cronie
+p,fastfetch
+p,iwd
+p,man-db
+p,sudo
+p,picom # compositor
+p,openssh
 
 ## Xorg
-xorg-server
-xorg-xinit
-xorg-xrandr
-xclip
-xcolor
-xdotool
-xorg-xset
+p,xorg-server
+p,xorg-xinit
+p,xorg-xrandr
+p,xclip
+p,xcolor
+p,xdotool
+p,xorg-xset
 
 ## Music stuff
-pamixer
-pipewire
-pipewire-audio
-pipewire-pulse
-playerctl
-wireplumber
-mpc
-mpd
-id3v2
+p,pamixer
+p,pipewire
+p,pipewire-audio
+p,pipewire-pulse
+p,playerctl
+p,wireplumber
+p,mpc
+p,mpd
+p,id3v2
 
 ## Notifications
-dunst
+p,dunst
 
 # Editor
-vim
-neovim
-noto-fonts-emoji
-ttf-jetbrains-mono-nerd
+p,vim
+p,neovim
+p,noto-fonts-emoji
+p,ttf-jetbrains-mono-nerd
 
 # LSPs
-gopls
+p,gopls
 
 # Browser
-firefox
+a,librewolf-bin
 
 # Terminal stuff
-stow
-zsh
-zsh-syntax-highlighting
-fzf
-git
-git-delta
-lazygit
-hugo
-lsof
-cowsay
-fortune-mod
-jq
+p,stow
+p,zsh
+p,zsh-syntax-highlighting
+p,fzf
+p,git
+p,git-delta
+p,lazygit
+p,hugo
+p,lsof
+p,cowsay
+p,fortune-mod
+p,jq
 
 # Terminal multiplexer
-tmux
+p,tmux
 
 # Password manager
-pass
-pass-otp
-zbar
+p,pass
+p,pass-otp
+p,zbar
 
 # File manager
-lf
+p,lf
 
 # Video player
-mpv
-yt-dlp
+p,mpv
+p,yt-dlp
 
 # Music player
-ncmpcpp
+p,ncmpcpp
 
 # RSS Reader
-newsboat
+p,newsboat
 
 # Libs
-imlib2
-libnotify
-libx11
-libxft
-libxinerama
+p,imlib2
+p,libnotify
+p,libx11
+p,libxft
+p,libxinerama
