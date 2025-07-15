@@ -61,6 +61,7 @@ p,lsof
 p,cowsay
 p,fortune-mod
 p,jq
+p,direnv
 
 # Terminal multiplexer
 p,tmux
