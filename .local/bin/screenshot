@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+mkdir -p ~/Pictures/Screenshots
+maim -g "$(slop)" >(tee ~/Pictures/Screenshots/snap-$(date +%Y-%m-%dT%H-%M-%S).png | xclip -selection clipboard -t image/png)

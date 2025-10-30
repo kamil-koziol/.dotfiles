@@ -84,6 +84,10 @@ p,ncmpcpp
 # RSS Reader
 p,newsboat
 
+# Image editing
+p,slop # Select screen range
+p,maim # take screenshots
+
 # Libs
 p,imlib2
 p,libnotify
