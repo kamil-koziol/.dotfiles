@@ -12,6 +12,7 @@ man-db
 sudo
 picom # compositor
 openssh
+polkit
 
 ## Xorg
 xorg-server
@@ -21,6 +22,7 @@ xclip
 xcolor
 xdotool
 xorg-xset
+xss-lock
 
 ## Music stuff
 pamixer
