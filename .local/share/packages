@@ -4,93 +4,94 @@
 # package manager == p => PACMAN
 
 # System
-p,brightnessctl
-p,cronie
-p,fastfetch
-p,iwd
-p,man-db
-p,sudo
-p,picom # compositor
-p,openssh
+brightnessctl
+cronie
+fastfetch
+iwd
+man-db
+sudo
+picom # compositor
+openssh
 
 ## Xorg
-p,xorg-server
-p,xorg-xinit
-p,xorg-xrandr
-p,xclip
-p,xcolor
-p,xdotool
-p,xorg-xset
+xorg-server
+xorg-xinit
+xorg-xrandr
+xclip
+xcolor
+xdotool
+xorg-xset
 
 ## Music stuff
-p,pamixer
-p,pipewire
-p,pipewire-audio
-p,pipewire-pulse
-p,playerctl
-p,wireplumber
-p,mpc
-p,mpd
-p,id3v2
+pamixer
+pipewire
+pipewire-audio
+pipewire-pulse
+playerctl
+wireplumber
+mpc
+mpd
+id3v2
 
 ## Notifications
-p,dunst
+dunst
 
 # Editor
-p,vim
-p,neovim
-p,noto-fonts-emoji
-p,ttf-jetbrains-mono-nerd
+vim
+neovim
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono-nerd
 
 # LSPs
-p,gopls
+gopls
 
 # Browser
-a,librewolf-bin
+firefox
 
 # Terminal stuff
-p,stow
-p,zsh
-p,zsh-syntax-highlighting
-p,fzf
-p,git
-p,git-delta
-p,lazygit
-p,hugo
-p,lsof
-p,cowsay
-p,fortune-mod
-p,jq
-p,direnv
+stow
+zsh
+zsh-syntax-highlighting
+fzf
+git
+git-delta
+lazygit
+hugo
+lsof
+cowsay
+fortune-mod
+jq
+direnv
 
 # Terminal multiplexer
-p,tmux
+tmux
 
 # Password manager
-p,pass
-p,pass-otp
-p,zbar
+pass
+pass-otp
+zbar
 
 # File manager
-p,lf
+lf
 
 # Video player
-p,mpv
-p,yt-dlp
+mpv
+yt-dlp
 
 # Music player
-p,ncmpcpp
+ncmpcpp
 
 # RSS Reader
-p,newsboat
+newsboat
 
 # Image editing
-p,slop # Select screen range
-p,maim # take screenshots
+slop # Select screen range
+maim # take screenshots
 
 # Libs
-p,imlib2
-p,libnotify
-p,libx11
-p,libxft
-p,libxinerama
+imlib2
+libnotify
+libx11
+libxft
+libxinerama
