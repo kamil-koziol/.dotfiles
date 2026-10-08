@@ -1,0 +1,9 @@
+[Unit]
+Description=X11 screen locker
+
+[Service]
+ExecStart=/usr/bin/xss-lock -- /home/%u/.local/bin/lock
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

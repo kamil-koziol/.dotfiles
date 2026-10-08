@@ -1,0 +1,13 @@
+[Unit]
+Description=Picom compositor
+PartOf=x-session.target
+After=x-session.target
+
+[Service]
+ExecStart=/usr/bin/picom --config /home/%u/.config/picom.conf
+Restart=on-failure
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/%u/.Xauthority
+
+[Install]
+WantedBy=x-session.target

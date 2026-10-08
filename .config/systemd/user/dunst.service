@@ -1,0 +1,13 @@
+[Unit]
+Description=Dunst notification daemon
+PartOf=x-session.target
+After=x-session.target
+
+[Service]
+ExecStart=/usr/bin/dunst
+Restart=on-failure
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/%u/.Xauthority
+
+[Install]
+WantedBy=x-session.target
