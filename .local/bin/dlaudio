@@ -1,3 +1,20 @@
 #!/bin/sh
 
-yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --embed-metadata --embed-thumbnail --parse-metadata "playlist_index:%(track_number)s" --convert-thumbnails png --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v png -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" --add-metadata -o "%(artist)s - %(title)s.%(ext)s" $1
+yt-dlp \
+-f bestaudio \
+-x \
+--audio-format mp3 \
+--audio-quality 0 \
+--embed-metadata \
+--embed-thumbnail \
+--convert-thumbnails png \
+--add-metadata \
+--parse-metadata "album:%(album)s" \
+--parse-metadata "playlist_title:%(album)s" \
+--parse-metadata "playlist_index:%(track_number)s" \
+--parse-metadata "artist:%(artist)s" \
+--parse-metadata "album_artist:%(channel)s" \
+--parse-metadata "release_year:%(year)s" \
+--ppa "ThumbnailsConvertor+ffmpeg:-vf crop='if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'" \
+-o "%(album)s/%(track_number)02d - %(title)s.%(ext)s" \
+"$1"
