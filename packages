@@ -1,0 +1,140 @@
+# System
+brightnessctl
+fastfetch
+iwd
+man-db
+sudo
+openssh
+polkit
+
+# Xorg / Desktop
+xorg-server
+xorg-xinit
+xorg-xrandr
+xclip
+xcolor
+xdotool
+xorg-xset
+xss-lock
+autorandr
+picom # compositor
+
+# Audio
+pamixer
+pipewire
+pipewire-audio
+pipewire-pulse
+playerctl
+wireplumber
+id3v2
+pavucontrol
+
+# Notifications
+dunst
+
+# Editor / Fonts
+vim
+neovim
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols-mono
+
+# LSPs / Formatters
+gopls
+pyright
+yaml-language-server
+tailwindcss-language-server
+svelte-language-server
+stylua
+lua-language-server
+
+# Shell / CLI
+stow
+zsh
+zsh-syntax-highlighting
+fzf
+git
+lazygit
+lsof
+cowsay
+fortune-mod
+jq
+direnv
+asciinema
+bat
+bc # calculator
+tldr
+ripgrep
+
+# File / Archive Utilities
+zip
+wget
+unrar
+unzip
+rsync
+
+# Disk / Filesystem
+dosfstools # mkfs.f32
+
+# Terminal multiplexer
+tmux
+
+# Password manager
+pass
+pass-otp
+zbar # scan QRs
+
+# File manager
+lf
+thunar
+
+# Media
+mpv
+yt-dlp
+feh # image viewer
+
+# RSS Reader
+newsboat
+
+# Image editing / Screenshots
+slop # Select screen range
+maim # take screenshots
+swappy # annotate screenshots
+
+# Libraries / Build Dependencies
+imlib2
+libnotify
+libx11
+libxft
+libxinerama
+libgit2
+libqalculate
+libxcrypt-compat
+
+# Mail
+aerc
+isync
+notmuch
+
+# Infrastructure
+docker
+docker-compose
+
+# Development
+chromium
+tree-sitter-cli
+uv
+nvm
+
+# Documents
+zathura
+zathura-pdf-mupdf
+typst # Cool alternative to latex
+
+# Torrent
+transmission-cli
+
+# AUR
+# aur,helium-browser-bin
+# aur,localsend-bin
