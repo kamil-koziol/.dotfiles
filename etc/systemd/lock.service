@@ -1,0 +1,11 @@
+[Unit]
+Description=Lock the screen on resume from suspend
+Before=sleep.target
+
+[Service]
+User=goat
+Environment=DISPLAY=:0
+ExecStart=/home/%u/.local/bin/lock
+
+[Install]
+WantedBy=sleep.target
