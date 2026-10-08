@@ -1,16 +1,9 @@
-# File in format
-# package manager,package
-# package manager == a => AUR
-# package manager == p => PACMAN
-
 # System
 brightnessctl
-cronie
 fastfetch
 iwd
 man-db
 sudo
-picom # compositor
 openssh
 polkit
 
@@ -23,6 +16,7 @@ xcolor
 xdotool
 xorg-xset
 xss-lock
+picom # compositor
 
 ## Music stuff
 pamixer
@@ -31,8 +25,6 @@ pipewire-audio
 pipewire-pulse
 playerctl
 wireplumber
-mpc
-mpd
 id3v2
 
 ## Notifications
@@ -57,9 +49,7 @@ zsh
 zsh-syntax-highlighting
 fzf
 git
-git-delta
 lazygit
-hugo
 lsof
 cowsay
 fortune-mod
@@ -72,7 +62,7 @@ tmux
 # Password manager
 pass
 pass-otp
-zbar
+zbar # scan QRs
 
 # File manager
 lf
@@ -81,15 +71,13 @@ lf
 mpv
 yt-dlp
 
-# Music player
-ncmpcpp
-
 # RSS Reader
 newsboat
 
 # Image editing
 slop # Select screen range
 maim # take screenshots
+swappy # annotate screenshots
 
 # Libs
 imlib2
