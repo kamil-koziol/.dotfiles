@@ -1,0 +1,4 @@
+cmd createfile %touch $1 && lf -remote "send $id load"
+map a push :createfile<space>
+
+map . set hidden!
