@@ -1,4 +1,31 @@
 #!/usr/bin/env sh
 
-mkdir -p ~/Pictures/Screenshots
-maim -g "$(slop)" >(tee ~/Pictures/Screenshots/snap-$(date +%Y-%m-%dT%H-%M-%S).png | xclip -selection clipboard -t image/png)
+edit=false
+
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        --edit)
+            edit=true
+            shift
+            ;;
+        --help)
+            echo "Usage: $0 [--verbose]"
+            exit 0
+            ;;
+        *)
+            echo "Unknown option: $1" >&2
+            exit 1
+            ;;
+    esac
+done
+
+mkdir -p $HOME/Pictures/Screenshots
+image="$HOME/Pictures/Screenshots/snap-$(date +%Y-%m-%dT%H-%M-%S).png"
+
+maim -g "$(slop)" > "$image"
+
+if [ "$edit" = true ]; then
+    swappy -f "$image" -o "$image"
+fi
+
+xclip -selection clipboard -t image/png < "$image"
