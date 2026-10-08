@@ -84,3 +84,4 @@ source /usr/share/nvm/init-nvm.sh
 # Direnv
 eval "$(direnv hook zsh)"
 
+alias xcp="xclip -selection clipboard"
