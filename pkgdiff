@@ -1,0 +1,7 @@
+#!/bin/sh
+
+pacman -Qqe | sort > /tmp/installed
+
+sed '/^#/d;/^$/d;s/\s*#.*//g' ./packages | sort > /tmp/wanted
+
+comm -23 /tmp/installed /tmp/wanted
