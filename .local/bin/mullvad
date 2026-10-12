@@ -1,0 +1,61 @@
+#!/bin/sh
+
+CONFIG_DIR="/etc/wireguard/mullvad"
+
+start_connection() {
+  config_file="$1"
+
+  if [ -z "$config_file" ] || [ ! -f "$config_file" ]; then
+    echo "No valid config selected."
+    exit 1
+  fi
+
+  basename=$(basename "$config_file" .conf)
+
+  # Bring down any active wg interfaces
+  for i in $(wg show interfaces); do
+    sudo wg-quick down "$CONFIG_DIR/$i.conf" 2>/dev/null
+  done
+
+  echo "Connecting to: $basename"
+  sudo wg-quick up "$config_file"
+}
+
+stop_connection() {
+  echo "Stopping active WireGuard interfaces..."
+  for i in $(wg show interfaces); do
+    sudo wg-quick down "$CONFIG_DIR/$i.conf" 2>/dev/null && echo "Stopped: $i"
+  done
+}
+
+current() {
+    ip -br a | grep wg | cut -f 1 --delimiter " "
+}
+
+check() {
+    curl https://am.i.mullvad.net/connected
+}
+
+case "$1" in
+  start)
+    if [ "$2" = "--random" ]; then
+      CONFIG_FILE=$(find "$CONFIG_DIR" -name '*.conf' | shuf -n 1)
+      echo "Randomly selected: $(basename "$CONFIG_FILE")"
+    else
+      CONFIG_FILE=$(ls "$CONFIG_DIR"/*.conf 2>/dev/null | fzf --prompt="Choose Mullvad server: ")
+    fi
+    stop_connection
+    start_connection "$CONFIG_FILE"
+    check
+    ;;
+  stop)
+    stop_connection
+    ;;
+  status)
+    check
+    ;;
+  *)
+    echo "Usage: $0 {start [--random] | stop}"
+    exit 1
+    ;;
+esac
