@@ -19,7 +19,7 @@ while [ "$#" -gt 0 ]; do
     esac
 done
 
-mkdir -p $HOME/Pictures/Screenshots
+mkdir -p "$HOME"/Pictures/Screenshots
 image="$HOME/Pictures/Screenshots/snap-$(date +%Y-%m-%dT%H-%M-%S).png"
 
 maim -g "$(slop)" > "$image"
